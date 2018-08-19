@@ -67,5 +67,5 @@
     "lint": "tslint --project src --fix && prettier --write \"{src,style,typings}/**/*.{ts,css,json}\"",
     "watch": "jlpm build --watch"
   },
-  "version": "0.3.0"
+  "version": "0.1.0"
 }
