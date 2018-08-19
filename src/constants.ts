@@ -2,15 +2,10 @@
 export const TYPES: {
   [key: string]: {name: string; extensions: string[]; engine: any};
 } = {
-  'application/vnd.graphviz': {
+  'text/vnd.graphviz': {
     name: 'dot',
-    extensions: ['.gv', '.dot'],
+    extensions: ['.gv', '.dot', '.neato'],
     engine: 'dot',
-  },
-  'application/vnd.graphviz.neato': {
-    name: 'neato',
-    extensions: ['.neato'],
-    engine: 'neato',
   },
 };
 
@@ -18,3 +13,9 @@ export const GRAPHVIZ_CLASS = 'jp-graphviz';
 export const GRAPHVIZ_TOOLS_CLASS = 'jp-graphviz-tools';
 export const GRAPHVIZ_GRAPH_CLASS = 'jp-graphviz-graph';
 export const GRAPHVIZ_CENTER_PAD = 0.95;
+
+export const CMD = {
+  NEW_DOC: 'docmanager:new-untitled',
+  OPEN_DOC: 'docmanager:open',
+  NEW_GV: 'graphviz:new-untitled',
+};

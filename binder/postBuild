@@ -1,6 +1,0 @@
-#!/bin/bash
-set -ex
-jlpm
-jlpm build
-jupyter labextension link .
-jupyter labextension list
