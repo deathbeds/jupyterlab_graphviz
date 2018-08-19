@@ -15,7 +15,7 @@
     "@types/d3-zoom": "^1.7.1",
     "@types/webpack-env": "~1.13.6",
     "codemirror": "~5.39.0",
-    "prettier": "1.13.7",
+    "prettier": "1.14.0",
     "rimraf": "~2.6.2",
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.14.0",
@@ -64,7 +64,7 @@
     "lab:build:dev": "jupyter lab build --dev",
     "lab:link": "jupyter labextension link . --no-build",
     "lab:watch": "jupyter lab --watch --dev --no-browser",
-    "lint": "tslint --project src --fix && prettier --write \"{src,style,typings}/**/*.{ts,css,json}\"",
+    "lint": "tslint --project src --fix && prettier --write *.json *.md *.yml \"{src,style,typings}/**/*.{ts,css,json}\"",
     "watch": "jlpm build --watch"
   },
   "version": "0.1.0"
