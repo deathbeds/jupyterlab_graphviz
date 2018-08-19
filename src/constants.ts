@@ -13,3 +13,9 @@ export const GRAPHVIZ_CLASS = 'jp-graphviz';
 export const GRAPHVIZ_TOOLS_CLASS = 'jp-graphviz-tools';
 export const GRAPHVIZ_GRAPH_CLASS = 'jp-graphviz-graph';
 export const GRAPHVIZ_CENTER_PAD = 0.95;
+
+export const CMD = {
+  NEW_DOC: 'docmanager:new-untitled',
+  OPEN_DOC: 'docmanager:open',
+  NEW_GV: 'graphviz:new-untitled',
+};

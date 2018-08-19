@@ -3,6 +3,10 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
+.jp-GraphvizIcon {
+  background-image: url(./img/diagram.svg);
+}
+
 /* the widget */
 .jp-graphviz {
   display: flex;

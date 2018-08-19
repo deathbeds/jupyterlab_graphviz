@@ -171,32 +171,6 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
   createRenderer: (options) => new RenderedGraphviz(options),
 };
 
-const extensions = Object.keys(C.TYPES).map((k) => {
-  const name = C.TYPES[k].name;
-  return {
-    id: `jupyterlab.graphviz.${name}`,
-    name,
-    rendererFactory,
-    rank: 0,
-    dataType: 'string',
-    fileTypes: [
-      {
-        name,
-        extensions: C.TYPES[k].extensions,
-        mimeTypes: [k],
-      },
-    ],
-    documentWidgetFactoryOptions: {
-      name,
-      primaryFileType: name,
-      fileTypes: [name],
-      defaultFor: [name],
-    },
-  } as IRenderMime.IExtension;
-});
-
-export default extensions;
-
 /**
  * A namespace for private module data.
  */
