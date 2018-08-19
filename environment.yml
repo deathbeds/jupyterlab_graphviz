@@ -1,5 +1,5 @@
 # This is used by repo2docker. conda can install all the Jupyter dependencies.
-name: jupyterlab-literallycanvas-dev
+name: jupyterlab-graphviz-dev
 
 channels:
   - conda-forge
