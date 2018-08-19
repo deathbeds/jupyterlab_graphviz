@@ -1,0 +1,16 @@
+# This is used by repo2docker. conda can install all the Jupyter dependencies.
+name: jupyterlab-literallycanvas-dev
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - flake8
+  - geckodriver
+  - jupyterlab >=0.34,<0.35
+  - nodejs >=8.9.3,<10
+  - python >=3.6,<3.7
+  - robotframework-seleniumlibrary
+  - pip:
+      - beautysh

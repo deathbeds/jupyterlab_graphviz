@@ -1,4 +1,5 @@
-# jupyterlab_graphviz
+# @deatbeds/jupyterlab_graphviz
+> An experimental fork of [jupyterlab_graphviz](https://github.com/PhE/jupyterlab_graphviz)
 
 > A JupyterLab extension for interactively viewing [Graphviz](https://www.graphviz.org) data
 files, powered by [viz.js](https://github.com/mdaines/viz.js/).
@@ -32,8 +33,8 @@ find text.
 
 ## Installation
 > ### Prerequisites
-* [JupyterLab](https://github.com/jupyterlab/jupyterlab) ≥ 0.33
-* [nodejs](https://nodejs.org/en/) ≥ 6,<10
+* [JupyterLab](https://github.com/jupyterlab/jupyterlab) 0.34
+* [NodeJS LTS](https://nodejs.org/en/) ≥ 6,<10
 
 > For example, via `conda`:
 ```bash
@@ -41,54 +42,5 @@ conda install -c conda-forge jupyterlab=0.33 nodejs=8
 ```
 
 ```bash
-jupyter labextension install jupyterlab_graphviz
+jupyter labextension install @deathbeds/jupyterlab_graphviz
 ```
-
-
-## Development
-
-### Quick start
-Gets you started with a clean, linted, build JupyterLab with the extension
-```bash
-jlpm bootstrap
-```
-
-#### Install dependencies
-```bash
-jlpm bootstrap
-```
-
-#### Build the extension
-```bash
-jlpm build
-```
-
-### Install into to my JupyterLab
-```bash
-jlpm lab:link
-```
-
-### Rebuild once
-To rebuild the package and the JupyterLab app:
-
-```bash
-jlpm build
-jlpm lab:build
-```
-
-### Develop continuously
-```bash
-jlpm watch
-# and in another terminal
-jlpm lab:watch
-```
-
-### Check and apply project style
-```bash
-jlpm lint
-```
-
-## TODO
-* add tests
-* add _Save as..._
-* build bundle for nbviewer
