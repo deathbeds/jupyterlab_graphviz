@@ -1,4 +1,3 @@
-
 import {IRenderMime} from '@jupyterlab/rendermime-interfaces';
 import * as C from './constants';
 import {rendererFactory} from '.';
