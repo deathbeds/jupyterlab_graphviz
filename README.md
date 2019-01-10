@@ -42,13 +42,13 @@ find text.
 
 > ### Prerequisites
 
-- [JupyterLab](https://github.com/jupyterlab/jupyterlab) 0.34
-- [NodeJS LTS](https://nodejs.org/en/) ≥ 6,<10
+- [JupyterLab](https://github.com/jupyterlab/jupyterlab) 0.35
+- [NodeJS LTS](https://nodejs.org/en/) ≥ 6
 
 > For example, via `conda`:
 
 ```bash
-conda install -c conda-forge jupyterlab=0.33 nodejs=8
+conda install -c conda-forge jupyterlab=0.35 nodejs=8
 ```
 
 ```bash
