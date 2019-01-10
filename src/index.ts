@@ -135,11 +135,8 @@ export class RenderedGraphviz extends Widget implements IRenderMime.IRenderer {
   }
 
   onZoom() {
-    const evt = (this._lastZoom = d3.event as d3Zoom.D3ZoomEvent<
-      SVGElement,
-      any
-    >);
-    const tx = evt && evt.transform;
+    this._lastZoom = d3.event as d3Zoom.D3ZoomEvent<SVGElement, any>;
+    const tx = this._lastZoom && this._lastZoom.transform;
 
     if (tx == null || isNaN(tx.x) || isNaN(tx.y) || isNaN(tx.k)) {
       return;
